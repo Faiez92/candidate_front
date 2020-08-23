@@ -8,7 +8,7 @@ import {CandFormComponent} from './cand-form/cand-form.component';
 
 const routes: Routes = [{path: 'auth', component: AuthComponent},
   {path: 'cand', component: CandidatComponent},
-  {path: '', component: FirstPageComponent}, {path: 'candf', component: CandFormComponent}];
+  {path: '', component: AuthComponent}, {path: 'candf', component: CandFormComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
