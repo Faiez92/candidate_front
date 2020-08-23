@@ -10,7 +10,16 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ##### On the first page, the admin needs to authenticate to consult candidates table, add, edit, and delete applications.
 
+![Screenshot from 2020-08-23 22-11-39](https://user-images.githubusercontent.com/67859967/90988822-c6ff7000-e58d-11ea-96ad-58a56c82cc81.png)
+
+##### In the candidates' list page, the admin is able to filter, and sort candidates
+![Screenshot from 2020-08-23 22-12-10](https://user-images.githubusercontent.com/67859967/90988833-e26a7b00-e58d-11ea-8408-1fd3b2a7d3c9.png)
+
+##### by clicking on modify the form will be filled with the candidate's data where admin can update or delete candidate data![Screenshot from 2020-08-23 22-16-05](https://user-images.githubusercontent.com/67859967/90988900-44c37b80-e58e-11ea-80ca-dd554158f096.png)
+
 ##### A candidate doesn't need to authenticate to apply, just click 'Seeking for a job'.
+![Screenshot from 2020-08-23 22-11-46](https://user-images.githubusercontent.com/67859967/90989137-31191480-e590-11ea-972b-b84786a54c34.png)
+
 
 ## Code scaffolding
 
