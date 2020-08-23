@@ -1,4 +1,5 @@
 <h1 align="center">Candidate details</h1>
+<button (click)="ToLogin()" class="btn btn-outline-info">Login</button>
 
 
 <div class="m-5  bg-info">
@@ -11,6 +12,6 @@
   Exp <input type="number" min="0" [(ngModel)]="selectedCand.exp" class="form-control" placeholder="example: 1 year"/>
   CV <input type="file" [(ngModel)]="selectedCand.cv" class="form-control  "/>
   Message <input type="text" [(ngModel)]="selectedCand.msg" class="form-control  "/>
-<button type="button" (click)="CreateCand()" class="btn btn-primary btn-lg btn-block  " >Add</button>
+<button type="button" (click)="CreateCand()" class="btn btn-info btn-lg btn-block  " >Add</button>
 
 </div>

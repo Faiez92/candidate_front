@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CandidatService} from '../candidat.service';
 import {Subject} from 'rxjs';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-candidat',
@@ -25,7 +26,7 @@ export class CandidatComponent implements OnInit {
   // email_status;
 
 
-  constructor(private api: CandidatService) {
+  constructor(private api: CandidatService, private router: Router) {
     this.getCandidats();
     this.selectedCand = {
       id: -1, nom: '', prenom: '', email: '', date_naiss: '', tel: '',
@@ -36,7 +37,6 @@ export class CandidatComponent implements OnInit {
   candidats = [];
   selectedCand;
 
-  dtOptions: DataTables.Settings = {};
   getCandidats = () => {
     this.api.getAllCandidats().subscribe(
       data => {
@@ -105,5 +105,9 @@ export class CandidatComponent implements OnInit {
 
   ngOnInit() {
     this.candidats = [];
+  }
+
+  ToLogin() {
+    this.router.navigate(['']);
   }
 }

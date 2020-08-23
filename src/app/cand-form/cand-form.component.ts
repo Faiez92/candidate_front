@@ -41,4 +41,7 @@ export class CandFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  ToLogin() {
+    this.router.navigate(['']);
+  }
 }
