@@ -1,0 +1,28 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <form>
+      <input [(ngModel)]="input.username" type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input [(ngModel)]="input.password" type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+<!--      <input type="submit" class="fadeIn fourth" value="Log In" >-->
+      <button (click)="onLogin()" class="btn btn-primary btn-lg btn-block " >Login Admin</button>
+      <button (click)="ToForm()" class="btn btn-primary btn-lg btn-block " >Seeking for a job</button>
+    </form>
+
+
+
+  </div>
+  </div>
+<!--</div>-->
+<!--    <h1>-->
+<!--    welcome-->
+<!--  </h1>-->
+<!--  <input [(ngModel)]="input.username" placeholder="Nom" class="fadeIn second" name="login"  ><br>-->
+<!--  <input [(ngModel)]="input.password" placeholder="Password"><br>-->
+<!--  <button (click)="onLogin()">Login User</button>-->
+<!--</div>-->
+

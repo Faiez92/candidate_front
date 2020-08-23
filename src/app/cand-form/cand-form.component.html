@@ -1,0 +1,16 @@
+<h1 align="center">Candidate details</h1>
+
+
+<div class="m-5  bg-info">
+  Nom <input type="text" [(ngModel)]="selectedCand.nom"  class="form-control" />
+  Prenom <input type="text" [(ngModel)]="selectedCand.prenom" class="form-control " />
+  Email <input type="text" [(ngModel)]="selectedCand.email" class="form-control "/>
+  Date Naissance <input type="date" [(ngModel)]="selectedCand.date_naiss" class="form-control  "/>
+  Tel <input type="text" [(ngModel)]="selectedCand.tel" class="form-control  "/>
+  Disp <input type="number" min="0" [(ngModel)]="selectedCand.disp" class="form-control  "/>
+  Exp <input type="number" min="0" [(ngModel)]="selectedCand.exp" class="form-control" placeholder="example: 1 year"/>
+  CV <input type="file" [(ngModel)]="selectedCand.cv" class="form-control  "/>
+  Message <input type="text" [(ngModel)]="selectedCand.msg" class="form-control  "/>
+<button type="button" (click)="CreateCand()" class="btn btn-primary btn-lg btn-block  " >Add</button>
+
+</div>

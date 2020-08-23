@@ -1,0 +1,55 @@
+<div style="text-align: center; " >
+  <h1>Candidates List</h1>
+  <table datatable class="row-border hover" >
+    <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Experience</th>
+      <th>Candidate Status</th>
+      <th>Email Status</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let candidat of candidats" style="text-align: center; ">
+      <th>{{ candidat.nom }}</th>
+      <td>{{ candidat.prenom }}</td>
+      <td>{{ candidat.email }}</td>
+      <td>{{ candidat.tel }}</td>
+      <td>{{ candidat.exp }} an </td>
+      <td>{{ candidat.cand_status }}</td>
+      <td>{{ candidat.email_status }}</td>
+      <td>
+        <button type="button" (click)="candidateClicked(candidat)" class="btn btn-default btn-lg">Edit</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<h1>Candidate details</h1>
+
+<div >
+First Name <input type="text" [(ngModel)]="selectedCand.nom"  class="form-control" placeholder="Mohammed Faiez"/>
+Last Name <input type="text" [(ngModel)]="selectedCand.prenom" class="form-control " placeholder="Abid"/>
+Email <input type="text" [(ngModel)]="selectedCand.email" class="form-control " placeholder="example@example.com"/>
+Birthdate <input type="date" [(ngModel)]="selectedCand.date_naiss" class="form-control"/>
+Phone <input type="number" maxlength="8" [(ngModel)]="selectedCand.tel" class="form-control" placeholder="58086046 (8 digits only)"/>
+Disponibility <input type="number" min="0" [(ngModel)]="selectedCand.disp" class="form-control" placeholder="1 month"/>
+Experience <input type="number" min="0" [(ngModel)]="selectedCand.exp" class="form-control" placeholder="example: 1 year"/>CV <input type="file" [(ngModel)]="selectedCand.cv" class="form-control  "/>
+Message <input type="text" [(ngModel)]="selectedCand.msg" class="form-control" placeholder="Infinity"/>
+<!--Cand status <input type="text" [(ngModel)]="selectedCand.cand_status" class="form-control  "/>-->
+Canddidate Status <select [(ngModel)]="selectedCand.cand_status" class="form-control">
+  <option>New Candidate</option>
+  <option>In Progress</option>
+  <option>Accepted</option>
+  <option>Refused</option>
+</select>
+<button type="button" (click)="UpdateCand()" class="btn btn-success btn-lg btn-block " >Update</button>
+<button type="button" (click)="CreateCand()" class="btn btn-primary btn-lg btn-block " >Add</button>
+<button type="button" (click)="DeleteCand()" class="btn btn-danger btn-lg btn-block " >Delete</button>
+</div>
+
