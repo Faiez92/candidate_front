@@ -34,7 +34,9 @@ export class AuthComponent implements OnInit {
         alert('user ' + this.input.username + ' logged');
         this.router.navigate(['/cand']);
       },
-      error => console.log('error ', error)
+      error => {console.log('error ', error);
+                alert('Please check your Login and Password');
+      }
     );
   }
   ToForm() {

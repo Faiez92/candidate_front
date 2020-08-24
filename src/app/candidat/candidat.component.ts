@@ -52,17 +52,6 @@ export class CandidatComponent implements OnInit {
     this.api.getOneCandidat(candidat.id).subscribe(
       data => {
         this.selectedCand = data;
-        // this.nom = data.nom;
-        // this.prenom = data.prenom;
-        // this.Cand_form = data.Cand_form;
-        // this.date_naiss = data.date_naiss;
-        // this.tel = data.tel;
-        // this.disp = data.disp;
-        // this.exp = data.exp;
-        // this.cv = data.cv;
-        // this.msg = data.msg;
-        // this.cand_status = data.cand_status;
-        // this.email_status = data.email_status;
       },
       error => {
         console.log(error);
